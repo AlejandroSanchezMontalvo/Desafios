@@ -1,0 +1,155 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --primary-font: 'Karla', sans-serif;
+  --cyan-light: #4abebd;
+  --on-primary: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+body {
+  padding: 4rem 2rem;
+  background-color: var(--light-gray);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+.main {
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.title.is-primary {
+  color: var(--cyan);
+}
+
+.paragraph,
+.item-list {
+  font-size: 14px;
+}
+
+.paragraph {
+  line-height: 24px;
+}
+
+.subtitle {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.subtitle.is-accent {
+  color: var(--bright-yellow);
+}
+
+.section {
+  padding: 1.5rem;
+}
+
+.join-community .paragraph:last-of-type {
+  color: #888888;
+}
+
+.section.is-primary,
+.section.is-primary-light {
+  color: var(--on-primary);
+}
+
+.section.is-primary {
+  background-color: var(--cyan);
+}
+
+.section.is-primary-light {
+  background-color: var(--cyan-light);
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, .15);
+}
+
+.button.is-accent {
+  background-color: var(--bright-yellow);
+  color: #ffffff;
+}
+
+.periocity {
+  display: flex;
+  align-items: center;
+  margin-bottom: .5rem;
+}
+
+.periocity .currency,
+.periocity .price {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.periocity .price { margin-right: 0.5rem }
+
+.periocity .periocity {
+  color: #ffffffaa;
+  margin-bottom: 0;
+}
+
+.monthly-description .paragraph:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.why-us .list {
+  color: #ffffffaa;
+}
+
+.item-list:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .join-us {
+    width: 100%;
+  }
+
+  .monthly-description,
+  .why-us {
+    width: 50%;
+  }
+}
