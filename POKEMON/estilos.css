@@ -110,15 +110,30 @@ body {
   margin-top: 30px;
 }
 
+.card-boton {
+  margin-top: 150px;
+  margin-left: -280px;
+}
+
 .card-boton a {
   background-color: #9fd8df;
   display: inline-block;
   text-decoration: none;
   color: #000;
-  padding: 5px 35px;
+  padding: 15px 55px;
   border-radius: 15px;
-  position: absolute;
-  top: 560px;
-  left: 590px;
+  /* position: absolute;
+            top: 560px;
+            left: 590px; */
+}
+
+.card-boton a:hover {
+  background: #5fdde5;
+}
+
+@media screen and (max-width: 770px) {
+  .card {
+    height: 110vh;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
