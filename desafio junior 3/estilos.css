@@ -20,6 +20,12 @@ a{
     text-decoration: none;
     color: var(--Dark-Grayish-Blue);
 }
+h2{
+    color: var(--Dark-Grayish-Blue);
+}
+.textos-black{
+    color: var(--Dark-Grayish-Blue);
+}
 .header{
     display: flex;
     flex-direction: column;
@@ -59,6 +65,8 @@ a{
     color: #fff;
     cursor: pointer;
     border: none;
+    border-bottom: 4px solid hsla(0, 0%, 0%, 0.1);
+    box-shadow: 0px 0px 24px 2px rgba(38, 186, 164, 0.24);
 }
 .btn-primary{
     background-color: var(--Light-Blue);
@@ -68,6 +76,8 @@ a{
     margin-left: 10px;
     cursor: pointer;
     border: none;
+    border-bottom: 4px solid hsla(0, 0%, 0%, 0.1);
+    box-shadow: 0px 0px 24px 2px rgba(97, 115, 255, 0.24);
 }
 .hero{
     display: flex;
@@ -217,16 +227,27 @@ a{
         display: flex;
         flex-direction: column;
     }
+    .hero h2 > span{
+        display: block;
+        text-align: center;
+    }
+    .about h2 > span{
+        display: block;
+        text-align: center;
+    }
+    .about__titles h2{
+        text-align: center;
+    }
+    .header__textos h2 > span{
+        display: block;
+        align-items: center;
+    }
     .btn-success{
-        padding: 10px 90px 15px 90px;
-        border-bottom: 4px solid hsla(0, 0%, 0%, 0.1);
-        box-shadow: 0px 0px 24px 2px rgba(38, 186, 164, 0.24);
+        padding: 10px 90px 15px 90px; 
     }
     .btn-primary{
         margin-top: 18px;
         padding: 10px 100px 15px 100px; 
-        border-bottom: 4px solid hsla(0, 0%, 0%, 0.1);
-        box-shadow: 0px 0px 24px 2px rgba(97, 115, 255, 0.24);
     }
     .textos-grey{
         text-align: center;
@@ -250,12 +271,27 @@ a{
         grid-template-columns: 1fr;
     }
     .footer{
-        grid-template-columns: 1fr;
-        height: 80vh;
-        margin-top: 60px;
+        grid-template-rows: repeat(9,1fr);
+        height: 90vh;
+    }
+    .footer__logo{
+        grid-row: 2/3;
+        margin-left: 40px;
+    }
+    .footer__textos{
+        grid-row: 4/7;
+        flex-direction: column;
+        margin-left: -120px;
+        text-align: right;
+        gap: 30px;
     }
     .footer__social{
-        justify-content: space-between;
-        margin-left: -50px;
+        grid-row: 8/8;
+        gap: 40px;
+        margin-left: -130px;
+    }
+    .center{
+        text-align: center; 
+        margin-left: 45px;
     }
 }
