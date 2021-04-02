@@ -269,24 +269,57 @@ h2{
     }
     .about__icons{
         grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about__icon p{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+    .about__icon span{
+        display: block;
+    }
+    .about__icon-dos{
+        margin-top: 60px;
+    }
+    .about__icon-dos p{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+    .about__icons img{
+        margin-bottom: 25px;
+    }
+    .about__icon-tres{
+        margin-top: 60px;
+    }
+    .about__icon-tres p{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+    .text-black{
+        margin: 0 auto;
     }
     .footer{
         grid-template-rows: repeat(9,1fr);
+        grid-template-columns: repeat(6,1fr);
         height: 90vh;
     }
     .footer__logo{
         grid-row: 2/3;
+        grid-column: 3/4;
         margin-left: 40px;
     }
     .footer__textos{
         grid-row: 4/7;
+        grid-column: 5/6;
         flex-direction: column;
         margin-left: -120px;
         text-align: right;
         gap: 30px;
     }
     .footer__social{
-        grid-row: 8/8;
+        grid-row: 8/9;
         gap: 40px;
         margin-left: -130px;
     }
